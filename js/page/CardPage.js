@@ -21,6 +21,11 @@ const instructions = Platform.select({
 });
 
 export default class CardPage extends BaseComponent {
+    static navigationOptions = (navigation) => {
+        return {
+            title: '卡包'
+        };
+    };
     render() {
         return (
             <View style={styles.container}>

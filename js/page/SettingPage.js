@@ -21,6 +21,12 @@ const instructions = Platform.select({
 });
 
 export default class SettingPage extends BaseComponent {
+    static navigationOptions = (navigation) => {
+        return {
+            title: '我的'
+        };
+    };
+
     render() {
         return (
             <View style={styles.container}>

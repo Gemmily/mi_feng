@@ -3,9 +3,7 @@
 import React from 'react';
 import {
     View,
-    Image,
-    Easing,
-    Animated
+
 } from 'react-native';
 import {
     StackNavigator,
@@ -65,7 +63,7 @@ const Tabs = TabNavigator({
         animationEnabled: false,//点击切换时标签页下的指示器是否有动画效果
         tabBarPosition: 'bottom',//标签页的具体放置位置 android 默认为'top' iOS为'bottom'
         lazy: true,//是否懒加载标签页  true时首次点击跳转页面的时候会有空白过度页面显示
-        swipeEnabled:true,//是否可以滑动左右拖动切换
+        swipeEnabled: true,//是否可以滑动左右拖动切换
         tabBarOptions: {
             activeTintColor: Colors.orange,//设置选中字体和图片颜色
             inactiveTintColor: Colors.text2,//未选中字体颜色
@@ -85,7 +83,7 @@ const Tabs = TabNavigator({
             //指示器样式
             indicatorStyle: {
                 backgroundColor: '#ccc',
-                height:0
+                height: 0,
             }
         }
     }
@@ -95,9 +93,9 @@ const Tabs = TabNavigator({
 export const AppNavigator = StackNavigator({
     Tab: {
         screen: Tabs,
-        navigationOptions: {
-            header: null
-        }
+        // navigationOptions: {
+        //     header: null
+        // }
     },
 
 }, {

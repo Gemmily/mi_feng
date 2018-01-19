@@ -21,6 +21,12 @@ const instructions = Platform.select({
 });
 
 export default class HomePage extends BaseComponent {
+    static navigationOptions = (navigation) => {
+        return {
+            title: 'mi_feng'
+        };
+    };
+
     render() {
         return (
             <View style={styles.container}>
