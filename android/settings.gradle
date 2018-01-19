@@ -1,0 +1,3 @@
+rootProject.name = 'mi_feng'
+
+include ':app'
